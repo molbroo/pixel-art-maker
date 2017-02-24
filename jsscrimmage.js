@@ -1,3 +1,18 @@
+var boxNumber = 0;
+var getGridNumber = prompt("How big do you want your board?");
+var updateGameState = function(getGridNumber) {
+  if (getGridNumber !== NaN) {
+    boxNumber = getGridNumber * getGridNumber;
+      for (var i = 1; i <= boxNumber; i++) {
+        var output = document.querySelector(".container")
+        var newCell = container.createElement('div')
+        newCell.classList.add('grid')
+        container.appendChild(newCell)
+}
+}
+};
+
+
 var colorPicker = document.querySelector('.paint-container')
 var currentColor = "#fff"
 colorPicker.addEventListener('click', function () {
